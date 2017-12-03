@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93569E3A-490A-4CF0-9A83-13CA9CBD3683}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>djkdc_qg</RootNamespace>
+    <AssemblyName>djkdc_qg</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ware\china.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a_GlobalClass\begin_public.cs" />
+    <Compile Include="a_GlobalClass\con_sql.cs" />
+    <Compile Include="a_GlobalClass\other_static.cs" />
+    <Compile Include="a_GlobalClass\userInfo.cs" />
+    <Compile Include="a_qg_trol\PagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\PagerControl.designer.cs">
+      <DependentUpon>PagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_bt_label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_bt_label.Designer.cs">
+      <DependentUpon>qg_bt_label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_button.Designer.cs">
+      <DependentUpon>qg_button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_button_quit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_button_quit.Designer.cs">
+      <DependentUpon>qg_button_quit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_button_small.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_button_small.Designer.cs">
+      <DependentUpon>qg_button_small.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_check.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_check.Designer.cs">
+      <DependentUpon>qg_check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_combobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_combobox.Designer.cs">
+      <DependentUpon>qg_combobox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_dy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_dy.Designer.cs">
+      <DependentUpon>qg_dy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_form.Designer.cs">
+      <DependentUpon>qg_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_grid.Designer.cs">
+      <DependentUpon>qg_grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_grid_tree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_grid_tree.Designer.cs">
+      <DependentUpon>qg_grid_tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_label.Designer.cs">
+      <DependentUpon>qg_label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_label_visible.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_label_visible.Designer.cs">
+      <DependentUpon>qg_label_visible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_numericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_numericUpDown.Designer.cs">
+      <DependentUpon>qg_numericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_read_text.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_read_text.Designer.cs">
+      <DependentUpon>qg_read_text.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text.Designer.cs">
+      <DependentUpon>qg_text.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_english.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_english.Designer.cs">
+      <DependentUpon>qg_text_english.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_pass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_pass.Designer.cs">
+      <DependentUpon>qg_text_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_spinner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_spinner.Designer.cs">
+      <DependentUpon>qg_text_spinner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_spinner_sum.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_text_spinner_sum.Designer.cs">
+      <DependentUpon>qg_text_spinner_sum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_tip_visible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\qg_tip_visible.Designer.cs">
+      <DependentUpon>qg_tip_visible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_trol\temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="a_qg_trol\temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_qg_zy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>a_qg_zy.resx</DependentUpon>
+    </Compile>
+    <Compile Include="a_sqlconn\Cs_Datatable.cs" />
+    <Compile Include="a_sqlconn\LogTextHelper.cs" />
+    <Compile Include="a_sqlconn\MyPinYin.cs" />
+    <Compile Include="a_sqlconn\other.cs" />
+    <Compile Include="a_sqlconn\qg_common.cs" />
+    <Compile Include="a_sqlconn\qg_Validator.cs" />
+    <Compile Include="a_sqlconn\SX_Static.cs" />
+    <Compile Include="a_sqlconn\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a_sqlconn\WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_sqlconn\WaitFormService.cs" />
+    <Compile Include="begin.cs" />
+    <Compile Include="begin_class.cs" />
+    <Compile Include="booksql\booksall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\booksall.Designer.cs">
+      <DependentUpon>booksall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\booksall_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\booksall_1.Designer.cs">
+      <DependentUpon>booksall_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\booksall_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\booksall_2.Designer.cs">
+      <DependentUpon>booksall_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\booksall_x1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\booksall_x1.Designer.cs">
+      <DependentUpon>booksall_x1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\booksall_x2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\booksall_x2.Designer.cs">
+      <DependentUpon>booksall_x2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\booksall_x_all.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\booksall_x_all.Designer.cs">
+      <DependentUpon>booksall_x_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\bookshz_cbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\bookshz_cbs.Designer.cs">
+      <DependentUpon>bookshz_cbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\bookshz_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\bookshz_type.Designer.cs">
+      <DependentUpon>bookshz_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\books_hz.cs" />
+    <Compile Include="booksql\books_print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\books_print.Designer.cs">
+      <DependentUpon>books_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksql\excel_to_sql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksql\excel_to_sql.Designer.cs">
+      <DependentUpon>excel_to_sql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qt\only_text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qt\only_text.Designer.cs">
+      <DependentUpon>only_text.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qt\Validat_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qt\Validat_form.Designer.cs">
+      <DependentUpon>Validat_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign.Designer.cs">
+      <DependentUpon>sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systemall\first_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systemall\first_view.Designer.cs">
+      <DependentUpon>first_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systemall\pass_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systemall\pass_update.Designer.cs">
+      <DependentUpon>pass_update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="a_qg_trol\PagerControl.resx">
+      <DependentUpon>PagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_bt_label.resx">
+      <DependentUpon>qg_bt_label.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_button.resx">
+      <DependentUpon>qg_button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_button_quit.resx">
+      <DependentUpon>qg_button_quit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_button_small.resx">
+      <DependentUpon>qg_button_small.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_check.resx">
+      <DependentUpon>qg_check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_combobox.resx">
+      <DependentUpon>qg_combobox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_dy.resx">
+      <DependentUpon>qg_dy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_form.resx">
+      <DependentUpon>qg_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_grid.resx">
+      <DependentUpon>qg_grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_grid_tree.resx">
+      <DependentUpon>qg_grid_tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_label.resx">
+      <DependentUpon>qg_label.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_label_visible.resx">
+      <DependentUpon>qg_label_visible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_numericUpDown.resx">
+      <DependentUpon>qg_numericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_read_text.resx">
+      <DependentUpon>qg_read_text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_text.resx">
+      <DependentUpon>qg_text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_text_english.resx">
+      <DependentUpon>qg_text_english.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_text_pass.resx">
+      <DependentUpon>qg_text_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_text_spinner.resx">
+      <DependentUpon>qg_text_spinner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_text_spinner_sum.resx">
+      <DependentUpon>qg_text_spinner_sum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_trol\qg_tip_visible.resx">
+      <DependentUpon>qg_tip_visible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_qg_zy.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>a_qg_zy.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_sqlconn\WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\booksall.resx">
+      <DependentUpon>booksall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\booksall_1.resx">
+      <DependentUpon>booksall_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\booksall_2.resx">
+      <DependentUpon>booksall_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\booksall_x1.resx">
+      <DependentUpon>booksall_x1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\booksall_x2.resx">
+      <DependentUpon>booksall_x2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\booksall_x_all.resx">
+      <DependentUpon>booksall_x_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\bookshz_cbs.resx">
+      <DependentUpon>bookshz_cbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\bookshz_type.resx">
+      <DependentUpon>bookshz_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\books_print.resx">
+      <DependentUpon>books_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksql\excel_to_sql.resx">
+      <DependentUpon>excel_to_sql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qt\only_text.resx">
+      <DependentUpon>only_text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="qt\Validat_form.resx">
+      <DependentUpon>Validat_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systemall\first_view.resx">
+      <DependentUpon>first_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systemall\pass_update.resx">
+      <DependentUpon>pass_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\djkdc_qg.exe.config" />
+    <None Include="bin\Debug\djkdc_qg.vshost.exe.config" />
+    <None Include="bin\Debug\djkdc_qg.vshost.exe.manifest" />
+    <None Include="bin\Debug\log\Overall\20171203.log" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\database\1.sql" />
+    <Content Include="bin\Debug\djkdc_qg.exe" />
+    <Content Include="bin\Debug\djkdc_qg.pdb" />
+    <Content Include="bin\Debug\djkdc_qg.vshost.exe" />
+    <Content Include="bin\Debug\ware\bj\02T58PICkj7_1024.jpg" />
+    <Content Include="bin\Debug\ware\bj\bj001.jpg" />
+    <Content Include="bin\Debug\ware\bj\bj001_x.jpg" />
+    <Content Include="bin\Debug\ware\bj\bj001_x2.jpg" />
+    <Content Include="bin\Debug\ware\china.ico" />
+    <Content Include="bin\Debug\ware\favicon.ico" />
+    <Content Include="bin\Debug\ware\signbg.jpg" />
+    <Content Include="bin\Debug\ware\tree.gif" />
+    <Content Include="ware\bj\02T58PICkj7_1024.jpg" />
+    <Content Include="ware\bj\bj001.jpg" />
+    <Content Include="ware\bj\bj001_x.jpg" />
+    <Content Include="ware\bj\bj001_x2.jpg" />
+    <Content Include="ware\china.ico" />
+    <Content Include="ware\favicon.ico" />
+    <Content Include="ware\signbg.jpg" />
+    <Content Include="ware\tree.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\zh-CHS\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
